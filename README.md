@@ -65,18 +65,6 @@
     </style>
 </head>
 <body>
-    <!-- Banner Section -->
-    <section id="banner" class="bg-dark text-white text-center py-5">
-        <div class="container">
-            <h1>HAECHANSTRM</h1>
-            <nav class="top-buttons">
-                <a href="streaming-guideline.html" target="_self">스트리밍 가이드라인</a>
-                <a href="id-creation.html" target="_self">아이디 생성</a>
-                <a href="playlist.html" target="_self">재생 목록</a>
-            </nav>
-        </div>
-    </section>
-
     <!-- Hero Section -->
     <section id="home" class="bg-dark text-white text-center py-5">
         <div class="container">
