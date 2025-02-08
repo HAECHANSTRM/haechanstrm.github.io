@@ -8,7 +8,7 @@ const HAECHANSTRM = () => {
       {/* Header */}
       <header className="text-center mb-10">
         <h1 className="text-4xl font-bold text-gray-800">HAECHANSTRM</h1>
-        <p className="text-lg text-gray-600 mt-2">Support and Stream with Love</p>
+        <p className="text-lg text-gray-600 mt-2">NCT HAECHAN 스트리밍 음원 총공팀</p>
       </header>
 
       {/* YouTube Video */}
