@@ -6,6 +6,11 @@
     <title>HAECHANSTRM</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
 </head>
 <body>
     <!-- Navbar -->
@@ -16,16 +21,11 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="d-flex gap-2">
-                <a href="#streaming-guideline" class="btn btn-light btn-sm">Streaming Guideline</a>
-                <a href="#id-creation" class="btn btn-light btn-sm">ID Creation</a>
-                <a href="#playlist" class="btn btn-light btn-sm">Playlist</a>
+                <div class="d-flex gap-2 ms-auto">
+                    <a href="#streaming-guideline" class="btn btn-light btn-sm">Streaming Guideline</a>
+                    <a href="#id-creation" class="btn btn-light btn-sm">ID Creation</a>
+                    <a href="#playlist" class="btn btn-light btn-sm">Playlist</a>
+                </div>
             </div>
         </div>
     </nav>
@@ -33,7 +33,7 @@
     <!-- Hero Section -->
     <section id="home" class="bg-primary text-white text-center py-5">
         <div class="container">
-            <h1 class="display-4">NCT HAECHAN 스트리밍 음원 총공팀</h1>
+            <h1 class="display-6">NCT HAECHAN 스트리밍 음원 총공팀</h1>
             <div class="ratio ratio-4x3 my-4" style="max-width: 480px; margin: 0 auto;">
                 <iframe src="https://www.youtube.com/embed/0yzxJz-hHcc" title="YouTube video" allowfullscreen></iframe>
             </div>
