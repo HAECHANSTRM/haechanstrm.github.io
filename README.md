@@ -144,6 +144,7 @@
                     <div class="container">
                         <h1>스트리밍 가이드라인</h1>
                         <p>
+                            <a class="clickable-text" onclick="showImage('youtube', 'streaming-guidelines')">YouTube M/V</a>
                             <a class="clickable-text" onclick="showImage('melon', 'streaming-guidelines')">Melon</a>
                             <a class="clickable-text" onclick="showImage('genie', 'streaming-guidelines')">Genie</a>
                             <a class="clickable-text" onclick="showImage('bugs', 'streaming-guidelines')">Bugs</a>
@@ -191,6 +192,7 @@
         function showImage(platform, section) {
             const images = {
                 'streaming-guidelines': {
+                    'youtube': 'https://via.placeholder.com/300?text=Youtube+Streaming',
                     'melon': 'https://via.placeholder.com/300?text=Melon+Streaming',
                     'genie': 'https://via.placeholder.com/300?text=Genie+Streaming',
                     'bugs': 'https://via.placeholder.com/300?text=Bugs+Streaming',
