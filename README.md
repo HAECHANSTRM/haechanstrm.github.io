@@ -192,7 +192,7 @@
         function showImage(platform, section) {
             const images = {
                 'streaming-guidelines': {
-                    'youtube': 'https://via.placeholder.com/300?text=Youtube+Streaming',
+                    'youtube': 'https://pbs.twimg.com/media/Gh28opVbYAAD1o-?format=jpg&name=medium',
                     'melon': 'https://via.placeholder.com/300?text=Melon+Streaming',
                     'genie': 'https://via.placeholder.com/300?text=Genie+Streaming',
                     'bugs': 'https://via.placeholder.com/300?text=Bugs+Streaming',
