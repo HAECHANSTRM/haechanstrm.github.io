@@ -20,9 +20,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#home">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
                 </ul>
             </div>
             <div class="d-flex gap-2">
@@ -36,18 +33,10 @@
     <!-- Hero Section -->
     <section id="home" class="bg-primary text-white text-center py-5">
         <div class="container">
-            <h1 class="display-4">Welcome to HAECHANSTRM</h1>
+            <h1 class="display-4">NCT HAECHAN 스트리밍 음원 총공팀</h1>
             <div class="ratio ratio-4x3 my-4" style="max-width: 480px; margin: 0 auto;">
                 <iframe src="https://www.youtube.com/embed/0yzxJz-hHcc" title="YouTube video" allowfullscreen></iframe>
             </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">About Us</h2>
-            <p class="text-center">NCT HAECHAN 스트리밍 음원 총공팀</p>
         </div>
     </section>
 
