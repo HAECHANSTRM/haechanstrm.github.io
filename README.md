@@ -92,7 +92,7 @@
         <a onclick="navigateTo('home')">HAECHAN</a>
         <a onclick="navigateTo('streaming-guidelines')">스트리밍 가이드라인</a>
         <a onclick="navigateTo('id-creation')">아이디 생성</a>
-        <a onclick="navigateTo('playlist')">플레이리스트</a>
+        <a onclick="navigateTo('playlist')">권장 스밍 리스트</a>
     </div>
 
     <!-- Content Section -->
@@ -174,8 +174,8 @@
                     <div class="container">
                         <h1>플레이리스트</h1>
                         <p>
-                            <a class="clickable-text" onclick="showText('good-person')">Good Person</a>
-                            <a class="clickable-text" onclick="showText('haechan-solo')">Haechan 1st Solo Album</a>
+                            <a class="clickable-text" onclick="showText('good-person')">좋은 사람(2022) ver.</a>
+                            <a class="clickable-text" onclick="showText('haechan-solo')">HAECHAN 1st Solo Album</a>
                         </p>
                         <div class="text-display" id="text-display"></div>
                     </div>
@@ -221,8 +221,8 @@
 
         function showText(content) {
             const texts = {
-                'good-person': 'Links TBA.',
-                'haechan-solo': 'Links TBA'
+                'good-person': '...',
+                'haechan-solo': 'soon...'
             };
 
             const textDisplay = document.getElementById('text-display');
