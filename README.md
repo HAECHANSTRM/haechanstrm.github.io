@@ -9,15 +9,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: black;
+            background-color: white;
             font-family: 'Roboto Slab', serif;
         }
         a {
             font-size: 1.2rem;
-            color: white !important;
+            color: black !important;
             text-decoration: none;
             text-transform: uppercase;
             cursor: pointer;
+            padding: 5px 10px;
         }
         a:hover {
             text-decoration: underline;
