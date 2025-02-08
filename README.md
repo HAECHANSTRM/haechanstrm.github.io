@@ -1,50 +1,72 @@
-import React from "react";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-
-const HAECHANSTRM = () => {
-  return (
-    <div className="min-h-screen bg-black flex flex-col items-center py-10">
-      {/* Header */}
-      <header className="text-center mb-10">
-        <h1 className="text-4xl font-bold text-white">HAECHANSTRM</h1>
-        <p className="text-lg text-gray-400 mt-2">Support and Stream with Love</p>
-      </header>
-
-      {/* YouTube Video */}
-      <Card className="max-w-md w-full mb-10 shadow-lg">
-        <CardContent>
-          <div className="relative w-full h-0 pb-[56.25%]">
-            <iframe
-              src="https://www.youtube.com/embed/0yzxJz-hHcc"
-              title="HAECHANSTRM Video"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              className="absolute top-0 left-0 w-full h-full rounded-lg"
-            ></iframe>
-          </div>
-        </CardContent>
-      </Card>
-
-      {/* Buttons */}
-      <div className="flex flex-wrap gap-4">
-        <button className="bg-white text-black px-6 py-3 rounded-lg shadow-md hover:bg-gray-300 transition-all">
-          Streaming Guideline
-        </button>
-        <button className="bg-white text-black px-6 py-3 rounded-lg shadow-md hover:bg-gray-300 transition-all">
-          ID Creation
-        </button>
-        <button className="bg-white text-black px-6 py-3 rounded-lg shadow-md hover:bg-gray-300 transition-all">
-          Playlist
-        </button>
-      </div>
-
-      {/* Footer */}
-      <footer className="text-center mt-10 text-gray-500">
-        <p>2025 HAECHANSTRM. All Rights Reserved.</p>
-      </footer>
-    </div>
-  );
-};
-
-export default HAECHANSTRM;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAECHANSTRM</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+        }
+        .nav-buttons {
+            display: flex;
+            gap: 15px;
+        }
+        .nav-buttons a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .nav-buttons a:hover {
+            text-decoration: underline;
+        }
+        main {
+            text-align: center;
+            margin-top: 50px;
+        }
+        footer {
+            margin-top: 50px;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav-buttons">
+            <a href="#home">Home</a>
+            <a href="#streaming-guideline">Streaming Guideline</a>
+            <a href="#id-creation">ID Creation</a>
+            <a href="#playlist">Playlist</a>
+        </nav>
+    </header>
+    <main id="home">
+        <h1>Welcome to HAECHANSTRM</h1>
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0yzxJz-hHcc" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+            </iframe>
+        </div>
+    </main>
+    <footer>
+        2025 HAECHANSTRM. All Rights Reserved.
+    </footer>
+</body>
+</html>
