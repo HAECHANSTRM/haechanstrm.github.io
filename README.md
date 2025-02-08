@@ -6,9 +6,12 @@
     <title>HAECHANSTRM</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
             background-color: black;
+            font-family: 'Roboto Slab', serif;
         }
         .btn {
             font-size: 1rem;
@@ -35,13 +38,7 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <div class="d-flex gap-2 ms-auto">
-                    <a href="#streaming-guideline" class="btn btn-light btn-sm">Streaming Guideline</a>
-                    <a href="#id-creation" class="btn btn-light btn-sm">ID Creation</a>
-                    <a href="#playlist" class="btn btn-light btn-sm">Playlist</a>
-                </div>
-            </div>
+            <div class="collapse navbar-collapse" id="navbarNav"></div>
         </div>
     </nav>
 
