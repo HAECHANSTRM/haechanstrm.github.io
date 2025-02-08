@@ -69,7 +69,7 @@
 <body>
     <!-- Top Links -->
     <div class="top-buttons">
-        <a onclick="navigateTo('home')">Home</a>
+        <a onclick="navigateTo('home')">HAECHAN</a>
         <a onclick="navigateTo('streaming-guidelines')">스트리밍 가이드라인</a>
         <a onclick="navigateTo('id-creation')">아이디 생성</a>
         <a onclick="navigateTo('playlist')">플레이리스트</a>
