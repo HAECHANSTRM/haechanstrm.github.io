@@ -172,7 +172,7 @@
             'playlist': `
                 <section class="text-white text-center py-5">
                     <div class="container">
-                        <h1>플레이리스트</h1>
+                        <h1>권장 스밍 리스트</h1>
                         <p>
                             <a class="clickable-text" onclick="showText('good-person')">좋은 사람(2022) ver.</a>
                             <a class="clickable-text" onclick="showText('haechan-solo')">HAECHAN 1st Solo Album</a>
