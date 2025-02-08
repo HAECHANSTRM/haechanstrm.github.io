@@ -12,8 +12,13 @@
             background-color: black;
             font-family: 'Roboto Slab', serif;
         }
-        .btn {
+        a {
             font-size: 1rem;
+            color: white;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
         #home {
             padding-top: 3rem;
@@ -25,7 +30,7 @@
         }
         .top-buttons {
             display: flex;
-            justify-content: flex-end;
+            justify-content: center;
             gap: 1rem;
             margin-bottom: 1rem;
         }
@@ -33,12 +38,8 @@
             h1 {
                 font-size: 1.5rem;
             }
-            .btn {
+            a {
                 font-size: 0.9rem;
-                padding: 0.5rem 0.8rem;
-            }
-            .navbar-brand {
-                font-size: 1.2rem;
             }
         }
     </style>
@@ -48,9 +49,9 @@
     <section id="home" class="bg-dark text-white text-center py-5">
         <div class="container">
             <div class="top-buttons">
-                <a href="#streaming-guideline" class="btn btn-light btn-lg">Streaming Guideline</a>
-                <a href="#id-creation" class="btn btn-light btn-lg">ID Creation</a>
-                <a href="#playlist" class="btn btn-light btn-lg">Playlist</a>
+                <a href="#streaming-guideline">Streaming Guideline</a>
+                <a href="#id-creation">ID Creation</a>
+                <a href="#playlist">Playlist</a>
             </div>
             <div class="ratio ratio-4x3" style="max-width: 480px; margin: 0 auto;">
                 <iframe src="https://www.youtube.com/embed/0yzxJz-hHcc" title="YouTube video" allowfullscreen></iframe>
