@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,7 +14,7 @@
         }
         a {
             font-size: 1.2rem;
-            color: white;
+            color: white !important; /* Force white font color */
             text-decoration: none;
             text-transform: uppercase;
             cursor: pointer;
@@ -124,7 +123,7 @@
                 <section class="text-white text-center py-5">
                     <div class="container">
                         <h1>Streaming Guidelines</h1>
-                        <p>Details about streaming guidelines go here.</p>
+                        <p>Melon, Genie, Bugs, Flo, Kakao Music.</p>
                     </div>
                 </section>
             `,
@@ -132,7 +131,7 @@
                 <section class="text-white text-center py-5">
                     <div class="container">
                         <h1>ID Creation</h1>
-                        <p>Instructions for creating an ID go here.</p>
+                        <p>Melon, Genie, Bugs, Flo, Kakao Music.</p>
                     </div>
                 </section>
             `,
@@ -140,7 +139,7 @@
                 <section class="text-white text-center py-5">
                     <div class="container">
                         <h1>Playlist</h1>
-                        <p>Curated playlists will appear here.</p>
+                        <p>Good Person, Haechan 1st Solo Album.</p>
                     </div>
                 </section>
             `
