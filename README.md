@@ -14,7 +14,7 @@
         }
         a {
             font-size: 1.2rem;
-            color: black !important;
+            color: dark grey !important;
             text-decoration: none;
             text-transform: uppercase;
             cursor: pointer;
@@ -82,8 +82,8 @@
             display: inline-block; /* Ensures margins apply consistently */
         }
         .selected {
-            color: white !important;
-            text-decoration: underline;
+            color: black !important;
+            text-decoration: black underline;
         }
         .scrollable-container {
             display: flex;
