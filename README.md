@@ -10,6 +10,21 @@
         body {
             background-color: black;
         }
+        .btn {
+            font-size: 1rem;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+            .btn {
+                font-size: 0.9rem;
+                padding: 0.5rem 0.8rem;
+            }
+            .navbar-brand {
+                font-size: 1.2rem;
+            }
+        }
     </style>
 </head>
 <body>
