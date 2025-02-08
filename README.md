@@ -51,6 +51,11 @@
             <div class="ratio ratio-4x3 my-4" style="max-width: 480px; margin: 0 auto;">
                 <iframe src="https://www.youtube.com/embed/0yzxJz-hHcc" title="YouTube video" allowfullscreen></iframe>
             </div>
+            <div class="d-flex justify-content-center gap-3 mt-4">
+                <a href="#streaming-guideline" class="btn btn-light btn-lg">Streaming Guideline</a>
+                <a href="#id-creation" class="btn btn-light btn-lg">ID Creation</a>
+                <a href="#playlist" class="btn btn-light btn-lg">Playlist</a>
+            </div>
         </div>
     </section>
 
