@@ -13,7 +13,7 @@
             font-family: 'Roboto Slab', serif;
         }
         a {
-            font-size: 1rem;
+            font-size: 1.2rem;
             color: white;
             text-decoration: none;
         }
@@ -31,7 +31,7 @@
         .top-buttons {
             display: flex;
             justify-content: center;
-            gap: 1rem;
+            gap: 1.5rem;
             margin-bottom: 1rem;
         }
         .video-grid {
@@ -50,7 +50,7 @@
                 font-size: 1.5rem;
             }
             a {
-                font-size: 0.9rem;
+                font-size: 1rem;
             }
             .video-grid {
                 grid-template-columns: 1fr;
