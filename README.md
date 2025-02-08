@@ -84,6 +84,23 @@
             color: white !important;
             text-decoration: underline;
         }
+        .scrollable-container {
+            display: flex;
+            overflow-x: auto;
+            white-space: nowrap;
+            gap: 10px;
+            padding: 10px 0;
+        }
+        .scrollable-container::-webkit-scrollbar {
+            height: 8px;
+        }
+        .scrollable-container::-webkit-scrollbar-thumb {
+            background-color: gray;
+            border-radius: 4px;
+        }
+        .scrollable-container::-webkit-scrollbar-track {
+            background-color: black;
+        }
     </style>
 </head>
 <body>
@@ -143,14 +160,14 @@
                 <section class="text-white text-center py-5">
                     <div class="container">
                         <h1>스트리밍 가이드라인</h1>
-                        <p>
+                        <div class="scrollable-container">
                             <a class="clickable-text" onclick="showImage('youtube', 'streaming-guidelines')">YouTube M/V</a>
                             <a class="clickable-text" onclick="showImage('melon', 'streaming-guidelines')">Melon</a>
                             <a class="clickable-text" onclick="showImage('genie', 'streaming-guidelines')">Genie</a>
                             <a class="clickable-text" onclick="showImage('bugs', 'streaming-guidelines')">Bugs</a>
                             <a class="clickable-text" onclick="showImage('flo', 'streaming-guidelines')">Flo</a>
                             <a class="clickable-text" onclick="showImage('kakao', 'streaming-guidelines')">Kakao Music</a>
-                        </p>
+                        </div>
                         <div class="image-display" id="image-display"></div>
                     </div>
                 </section>
@@ -159,13 +176,13 @@
                 <section class="text-white text-center py-5">
                     <div class="container">
                         <h1>아이디 생성</h1>
-                        <p>
+                        <div class="scrollable-container">
                             <a class="clickable-text" onclick="showImage('melon', 'id-creation')">Melon</a>
                             <a class="clickable-text" onclick="showImage('genie', 'id-creation')">Genie</a>
                             <a class="clickable-text" onclick="showImage('bugs', 'id-creation')">Bugs</a>
                             <a class="clickable-text" onclick="showImage('flo', 'id-creation')">Flo</a>
                             <a class="clickable-text" onclick="showImage('kakao', 'id-creation')">Kakao Music</a>
-                        </p>
+                        </div>
                         <div class="image-display" id="image-display"></div>
                     </div>
                 </section>
@@ -174,10 +191,10 @@
                 <section class="text-white text-center py-5">
                     <div class="container">
                         <h1>권장 스밍 리스트</h1>
-                        <p>
+                        <div class="scrollable-container">
                             <a class="clickable-text" onclick="showText('good-person')">좋은 사람(2022) ver.</a>
                             <a class="clickable-text" onclick="showText('haechan-solo')">HAECHAN 1st Solo Album</a>
-                        </p>
+                        </div>
                         <div class="text-display" id="text-display"></div>
                     </div>
                 </section>
