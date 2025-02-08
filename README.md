@@ -204,8 +204,8 @@
 
         function showText(option) {
             const texts = {
-                'good-person': 'Good Person is a heartwarming track that showcases Haechan\'s vocal prowess and emotional depth.',
-                'haechan-solo': 'Haechan\'s 1st Solo Album is a masterpiece filled with versatile tracks, highlighting his talent and artistry.'
+                'good-person': 'Haechan First OST Clickable Playlists.',
+                'haechan-solo': 'Haechan 1st Solo Album Clickable Playlists'
             };
 
             const textDisplay = document.getElementById('text-display');
