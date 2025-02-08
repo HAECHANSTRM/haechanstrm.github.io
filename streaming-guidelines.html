@@ -12,6 +12,7 @@
         body {
             background-color: black;
             font-family: 'Roboto Slab', serif;
+            color: white;
         }
         a {
             font-size: 1.2rem;
@@ -22,13 +23,27 @@
         a:hover {
             text-decoration: underline;
         }
-        #banner {
-            padding-top: 3rem;
-            padding-bottom: 3rem;
+        .top-buttons {
+            display: flex;
+            justify-content: flex-start;
+            gap: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+        h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 1.5rem;
         }
         footer {
             font-size: 0.7rem;
             opacity: 0.6;
+        }
+        img {
+            width: 100%;
+            max-width: 600px;
+            margin-bottom: 20px;
         }
         @media (max-width: 768px) {
             h1 {
@@ -37,24 +52,31 @@
             a {
                 font-size: 0.9rem;
             }
+            .top-buttons {
+                flex-wrap: wrap;
+                gap: 0.5rem;
+            }
         }
     </style>
 </head>
 <body>
-    <!-- Banner Section -->
-    <section id="banner" class="bg-dark text-white text-center py-5">
-        <div class="container">
-            <h1>HAECHANSTRM</h1>
-            </nav>
-        </div>
-    </section>
+    <!-- Top Links -->
+    <div class="top-buttons">
+        <a href="index.html">홈</a>
+        <a href="streaming-guidelines.html">스트리밍 가이드라인</a>
+        <a href="id-creation.html">아이디 생성</a>
+        <a href="playlist.html">플레이리스트</a>
+    </div>
+
+    <!-- Page Title -->
+    <h1>HAECHANSTRM</h1>
 
     <!-- Content Section -->
     <section class="text-white py-5">
         <div class="container">
             <h2>스트리밍 가이드라인</h2>
             <p>(PHOTOS) Streaming Guideline: Melon Genie Bugs Vibe Flo</p>
-            <img src="guide.jpg" alt="Streaming Guideline" style="width: 100%; max-width: 600px; margin-bottom: 20px;">
+            <img src="guide.jpg" alt="Streaming Guideline">
         </div>
     </section>
 
