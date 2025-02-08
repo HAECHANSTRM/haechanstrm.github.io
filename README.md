@@ -108,10 +108,10 @@
 <body>
     <!-- Top Links -->
     <div class="top-buttons">
-        <a onclick="navigateTo('home')">HAECHAN</a>
-        <a onclick="navigateTo('streaming-guidelines')">스트리밍 가이드라인</a>
-        <a onclick="navigateTo('id-creation')">아이디 생성</a>
-        <a onclick="navigateTo('playlist')">권장 스밍 리스트</a>
+        <a class="clickable-text"="navigateTo('home')">HAECHAN</a>
+        <a class="clickable-text"="navigateTo('streaming-guidelines')">스트리밍 가이드라인</a>
+        <a class="clickable-text"="navigateTo('id-creation')">아이디 생성</a>
+        <a class="clickable-text"="navigateTo('playlist')">권장 스밍 리스트</a>
     </div>
 
     <!-- Content Section -->
