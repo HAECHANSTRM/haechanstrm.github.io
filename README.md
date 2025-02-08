@@ -34,6 +34,10 @@
             gap: 1rem;
             margin-bottom: 1rem;
         }
+        footer {
+            font-size: 0.7rem;
+            opacity: 0.6;
+        }
         @media (max-width: 768px) {
             h1 {
                 font-size: 1.5rem;
