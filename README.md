@@ -65,14 +65,21 @@
     </style>
 </head>
 <body>
-    <!-- Hero Section -->
-    <section id="home" class="bg-dark text-white text-center py-5">
+    <!-- Banner Section -->
+    <section id="banner" class="bg-dark text-white text-center py-5">
         <div class="container">
-            <div class="top-buttons">
+            <h1>HAECHANSTRM</h1>
+            <nav class="top-buttons">
                 <a href="streaming-guideline.html" target="_self">스트리밍 가이드라인</a>
                 <a href="id-creation.html" target="_self">아이디 생성</a>
                 <a href="playlist.html" target="_self">재생 목록</a>
-            </div>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-dark text-white text-center py-5">
+        <div class="container">
             <div class="ratio ratio-16x9" style="max-width: 640px; margin: 0 auto;">
                 <iframe src="https://www.youtube.com/embed/0yzxJz-hHcc" title="YouTube video" allowfullscreen></iframe>
             </div>
