@@ -14,7 +14,7 @@
         }
         a {
             font-size: 1.2rem;
-            color: dark grey !important;
+            color: dark gray !important;
             text-decoration: none;
             text-transform: uppercase;
             cursor: pointer;
