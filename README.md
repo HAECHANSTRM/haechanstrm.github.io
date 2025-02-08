@@ -35,8 +35,14 @@
     <section id="home" class="bg-primary text-white text-center py-5">
         <div class="container">
             <h1 class="display-4">Welcome to HAECHANSTRM</h1>
-            <p class="lead">A modern, responsive website built with Bootstrap.</p>
-            <a href="#about" class="btn btn-light btn-lg">Learn More</a>
+            <div class="ratio ratio-16x9 my-4">
+                <iframe src="https://www.youtube.com/embed/0yzxJz-hHcc" title="YouTube video" allowfullscreen></iframe>
+            </div>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="#streaming-guideline" class="btn btn-light btn-lg">Streaming Guideline</a>
+                <a href="#id-creation" class="btn btn-light btn-lg">ID Creation</a>
+                <a href="#playlist" class="btn btn-light btn-lg">Playlist</a>
+            </div>
         </div>
     </section>
 
@@ -45,26 +51,6 @@
         <div class="container">
             <h2 class="text-center mb-4">About Us</h2>
             <p class="text-center">This is a simple template built using Bootstrap to create responsive and visually appealing websites quickly.</p>
-            <div class="row mt-4">
-                <div class="col-md-4 text-center">
-                    <div class="card p-3">
-                        <h5>Feature 1</h5>
-                        <p>Short description of the feature.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 text-center">
-                    <div class="card p-3">
-                        <h5>Feature 2</h5>
-                        <p>Short description of the feature.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 text-center">
-                    <div class="card p-3">
-                        <h5>Feature 3</h5>
-                        <p>Short description of the feature.</p>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
