@@ -8,19 +8,19 @@ const HAECHANSTRM = () => {
       {/* Header */}
       <header className="text-center mb-10">
         <h1 className="text-4xl font-bold text-white">HAECHANSTRM</h1>
-        <p className="text-lg text-gray-400 mt-2">NCT HAECHAN 스트리밍 음원 총공팀</p>
+        <p className="text-lg text-gray-400 mt-2">Support and Stream with Love</p>
       </header>
 
       {/* YouTube Video */}
-      <Card className="max-w-2xl w-full mb-10 shadow-lg">
+      <Card className="max-w-md w-full mb-10 shadow-lg">
         <CardContent>
-          <div className="aspect-w-16 aspect-h-9">
+          <div className="relative w-full h-0 pb-[56.25%]">
             <iframe
               src="https://www.youtube.com/embed/0yzxJz-hHcc"
               title="HAECHANSTRM Video"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
-              className="w-full h-full rounded-lg"
+              className="absolute top-0 left-0 w-full h-full rounded-lg"
             ></iframe>
           </div>
         </CardContent>
@@ -28,15 +28,15 @@ const HAECHANSTRM = () => {
 
       {/* Buttons */}
       <div className="flex flex-wrap gap-4">
-        <Button className="bg-white text-black px-6 py-3 rounded-lg shadow-md hover:bg-gray-300">
+        <button className="bg-white text-black px-6 py-3 rounded-lg shadow-md hover:bg-gray-300 transition-all">
           Streaming Guideline
-        </Button>
-        <Button className="bg-white text-black px-6 py-3 rounded-lg shadow-md hover:bg-gray-300">
+        </button>
+        <button className="bg-white text-black px-6 py-3 rounded-lg shadow-md hover:bg-gray-300 transition-all">
           ID Creation
-        </Button>
-        <Button className="bg-white text-black px-6 py-3 rounded-lg shadow-md hover:bg-gray-300">
+        </button>
+        <button className="bg-white text-black px-6 py-3 rounded-lg shadow-md hover:bg-gray-300 transition-all">
           Playlist
-        </Button>
+        </button>
       </div>
 
       {/* Footer */}
