@@ -28,6 +28,7 @@
         .ratio {
             margin-top: 1rem;
             margin-bottom: 1rem;
+            background-color: black;
         }
         .top-buttons {
             display: flex;
@@ -73,7 +74,7 @@
     </div>
 
     <!-- Hero Section -->
-    <section id="home" class="bg-dark text-white text-center py-5">
+    <section id="home" class="text-white text-center py-5">
         <div class="container">
             <div class="ratio ratio-16x9" style="max-width: 640px; margin: 0 auto;">
                 <iframe src="https://www.youtube.com/embed/0yzxJz-hHcc" title="YouTube video" allowfullscreen></iframe>
