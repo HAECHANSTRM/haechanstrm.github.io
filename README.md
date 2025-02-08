@@ -31,7 +31,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="bg-primary text-white text-center py-5">
+    <section id="home" class="bg-dark text-white text-center py-5">
         <div class="container">
             <h1 class="display-6">NCT HAECHAN 스트리밍 음원 총공팀</h1>
             <div class="ratio ratio-4x3 my-4" style="max-width: 480px; margin: 0 auto;">
