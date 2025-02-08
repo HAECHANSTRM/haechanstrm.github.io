@@ -65,6 +65,13 @@
     </style>
 </head>
 <body>
+    <!-- Top Links -->
+    <div class="top-buttons">
+        <a href="streaming-guidelines.html">스트리밍 가이드라인</a>
+        <a href="id-creation.html">아이디 생성</a>
+        <a href="playlist.html">플레이리스트</a>
+    </div>
+
     <!-- Hero Section -->
     <section id="home" class="bg-dark text-white text-center py-5">
         <div class="container">
