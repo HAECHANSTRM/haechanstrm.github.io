@@ -1,62 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HAECHANSTRM</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">HAECHANSTRM</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+import React from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 
-    <!-- Hero Section -->
-    <section id="home" class="bg-primary text-white text-center py-5">
-        <div class="container">
-            <h1 class="display-4">Welcome to HAECHANSTRM</h1>
-            <div class="ratio ratio-16x9 my-4">
-                <iframe src="https://www.youtube.com/embed/0yzxJz-hHcc" title="YouTube video" allowfullscreen></iframe>
-            </div>
-            <div class="d-flex justify-content-center gap-3">
-                <a href="#streaming-guideline" class="btn btn-light btn-lg">Streaming Guideline</a>
-                <a href="#id-creation" class="btn btn-light btn-lg">ID Creation</a>
-                <a href="#playlist" class="btn btn-light btn-lg">Playlist</a>
-            </div>
-        </div>
-    </section>
+const HAECHANSTRM = () => {
+  return (
+    <div className="min-h-screen bg-gray-100 flex flex-col items-center py-10">
+      {/* Header */}
+      <header className="text-center mb-10">
+        <h1 className="text-4xl font-bold text-gray-800">HAECHANSTRM</h1>
+        <p className="text-lg text-gray-600 mt-2">Support and Stream with Love</p>
+      </header>
 
-    <!-- About Section -->
-    <section id="about" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">About Us</h2>
-            <p class="text-center">NCT HAECHAN 스트리밍 음원 총공팀</p>
-        </div>
-    </section>
+      {/* YouTube Video */}
+      <Card className="max-w-4xl w-full mb-10 shadow-lg">
+        <CardContent>
+          <div className="aspect-w-16 aspect-h-9">
+            <iframe
+              src="https://www.youtube.com/embed/0yzxJz-hHcc"
+              title="HAECHANSTRM Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="w-full h-full rounded-lg"
+            ></iframe>
+          </div>
+        </CardContent>
+      </Card>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-        <p class="mb-0">&copy; 2025 HAECHANSTRM. All Rights Reserved.</p>
-    </footer>
+      {/* Buttons */}
+      <div className="flex flex-wrap gap-4">
+        <Button className="bg-blue-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-600">
+          Streaming Guideline
+        </Button>
+        <Button className="bg-green-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-green-600">
+          ID Creation
+        </Button>
+        <Button className="bg-purple-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-purple-600">
+          Playlist
+        </Button>
+      </div>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+      {/* Footer */}
+      <footer className="text-center mt-10 text-gray-500">
+        <p>2025 HAECHANSTRM. All Rights Reserved.</p>
+      </footer>
+    </div>
+  );
+};
+
+export default HAECHANSTRM;
