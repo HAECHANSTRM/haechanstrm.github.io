@@ -76,6 +76,14 @@
             font-size: 1.2rem;
             color: white;
         }
+        .clickable-text {
+            margin: 0 10px; /* Adds horizontal spacing between links */
+            display: inline-block; /* Ensures margins apply consistently */
+        }
+        .selected {
+            color: white !important;
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -136,11 +144,11 @@
                     <div class="container">
                         <h1>스트리밍 가이드라인</h1>
                         <p>
-                            <a onclick="showImage('melon', 'streaming-guidelines')">Melon</a>, 
-                            <a onclick="showImage('genie', 'streaming-guidelines')">Genie</a>, 
-                            <a onclick="showImage('bugs', 'streaming-guidelines')">Bugs</a>, 
-                            <a onclick="showImage('flo', 'streaming-guidelines')">Flo</a>, 
-                            <a onclick="showImage('kakao', 'streaming-guidelines')">Kakao Music</a>
+                            <a class="clickable-text" onclick="showImage('melon', 'streaming-guidelines')">Melon</a>
+                            <a class="clickable-text" onclick="showImage('genie', 'streaming-guidelines')">Genie</a>
+                            <a class="clickable-text" onclick="showImage('bugs', 'streaming-guidelines')">Bugs</a>
+                            <a class="clickable-text" onclick="showImage('flo', 'streaming-guidelines')">Flo</a>
+                            <a class="clickable-text" onclick="showImage('kakao', 'streaming-guidelines')">Kakao Music</a>
                         </p>
                         <div class="image-display" id="image-display"></div>
                     </div>
@@ -151,11 +159,11 @@
                     <div class="container">
                         <h1>아이디 생성</h1>
                         <p>
-                            <a onclick="showImage('melon', 'id-creation')">Melon</a>, 
-                            <a onclick="showImage('genie', 'id-creation')">Genie</a>, 
-                            <a onclick="showImage('bugs', 'id-creation')">Bugs</a>, 
-                            <a onclick="showImage('flo', 'id-creation')">Flo</a>, 
-                            <a onclick="showImage('kakao', 'id-creation')">Kakao Music</a>
+                            <a class="clickable-text" onclick="showImage('melon', 'id-creation')">Melon</a>
+                            <a class="clickable-text" onclick="showImage('genie', 'id-creation')">Genie</a>
+                            <a class="clickable-text" onclick="showImage('bugs', 'id-creation')">Bugs</a>
+                            <a class="clickable-text" onclick="showImage('flo', 'id-creation')">Flo</a>
+                            <a class="clickable-text" onclick="showImage('kakao', 'id-creation')">Kakao Music</a>
                         </p>
                         <div class="image-display" id="image-display"></div>
                     </div>
@@ -166,8 +174,8 @@
                     <div class="container">
                         <h1>플레이리스트</h1>
                         <p>
-                            <a onclick="showText('good-person')">Good Person</a>, 
-                            <a onclick="showText('haechan-solo')">Haechan 1st Solo Album</a>
+                            <a class="clickable-text" onclick="showText('good-person')">Good Person</a>
+                            <a class="clickable-text" onclick="showText('haechan-solo')">Haechan 1st Solo Album</a>
                         </p>
                         <div class="text-display" id="text-display"></div>
                     </div>
@@ -194,22 +202,40 @@
                     'genie': 'https://via.placeholder.com/300?text=Genie+ID+Creation',
                     'bugs': 'https://via.placeholder.com/300?text=Bugs+ID+Creation',
                     'flo': 'https://via.placeholder.com/300?text=Flo+ID+Creation',
-                    'kakao': 'https://via.placeholder.com/300?text=Kakao+ID+Creation'
+                    'kakao': 'https://via.placeholder.com/300?text=Kakao+Music+ID+Creation'
                 }
             };
 
             const imageDisplay = document.getElementById('image-display');
-            imageDisplay.innerHTML = `<img src="${images[section][platform]}" alt="${platform} image">`;
+            const imageUrl = images[section][platform];
+
+            if (imageUrl) {
+                imageDisplay.innerHTML = `<img src="${imageUrl}" alt="${platform} Image">`;
+            }
+
+            // Highlight the selected text
+            const links = document.querySelectorAll(`#content .clickable-text`);
+            links.forEach(link => link.classList.remove('selected')); // Remove previous selection
+            event.target.classList.add('selected'); // Add to current selection
         }
 
-        function showText(option) {
+        function showText(content) {
             const texts = {
-                'good-person': 'Haechan First OST Clickable Playlists.',
-                'haechan-solo': 'Haechan 1st Solo Album Clickable Playlists'
+                'good-person': 'Links TBA.',
+                'haechan-solo': 'Links TBA'
             };
 
             const textDisplay = document.getElementById('text-display');
-            textDisplay.innerHTML = `<p>${texts[option]}</p>`;
+            const textContent = texts[content];
+
+            if (textContent) {
+                textDisplay.innerHTML = `<p>${textContent}</p>`;
+            }
+
+            // Highlight the selected text
+            const links = document.querySelectorAll(`#content .clickable-text`);
+            links.forEach(link => link.classList.remove('selected')); // Remove previous selection
+            event.target.classList.add('selected'); // Add to current selection
         }
     </script>
 </body>
