@@ -4,69 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HAECHANSTRM</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 10px 20px;
-            display: flex;
-            align-items: center;
-        }
-        .nav-buttons {
-            display: flex;
-            gap: 15px;
-        }
-        .nav-buttons a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .nav-buttons a:hover {
-            text-decoration: underline;
-        }
-        main {
-            text-align: center;
-            margin-top: 50px;
-        }
-        footer {
-            margin-top: 50px;
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav class="nav-buttons">
-            <a href="#home">Home</a>
-            <a href="#streaming-guideline">Streaming Guideline</a>
-            <a href="#id-creation">ID Creation</a>
-            <a href="#playlist">Playlist</a>
-        </nav>
-    </header>
-    <main id="home">
-        <h1>Welcome to HAECHANSTRM</h1>
-        <div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/0yzxJz-hHcc" 
-                title="YouTube video player" frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-            </iframe>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">HAECHANSTRM</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </main>
-    <footer>
-        2025 HAECHANSTRM. All Rights Reserved.
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4">Welcome to HAECHANSTRM</h1>
+            <div class="ratio ratio-16x9 my-4">
+                <iframe src="https://www.youtube.com/embed/0yzxJz-hHcc" title="YouTube video" allowfullscreen></iframe>
+            </div>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="#streaming-guideline" class="btn btn-light btn-lg">Streaming Guideline</a>
+                <a href="#id-creation" class="btn btn-light btn-lg">ID Creation</a>
+                <a href="#playlist" class="btn btn-light btn-lg">Playlist</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">About Us</h2>
+            <p class="text-center">NCT HAECHAN 스트리밍 음원 총공팀</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">&copy; 2025 HAECHANSTRM. All Rights Reserved.</p>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
