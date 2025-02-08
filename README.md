@@ -140,7 +140,7 @@
                             <a onclick="showImage('genie', 'streaming-guidelines')">Genie</a>, 
                             <a onclick="showImage('bugs', 'streaming-guidelines')">Bugs</a>, 
                             <a onclick="showImage('flo', 'streaming-guidelines')">Flo</a>, 
-                            <a onclick="showImage('kakao', 'streaming-guidelines')">Kakao Music</a>.
+                            <a onclick="showImage('kakao', 'streaming-guidelines')">Kakao Music</a>
                         </p>
                         <div class="image-display" id="image-display"></div>
                     </div>
@@ -155,7 +155,7 @@
                             <a onclick="showImage('genie', 'id-creation')">Genie</a>, 
                             <a onclick="showImage('bugs', 'id-creation')">Bugs</a>, 
                             <a onclick="showImage('flo', 'id-creation')">Flo</a>, 
-                            <a onclick="showImage('kakao', 'id-creation')">Kakao Music</a>.
+                            <a onclick="showImage('kakao', 'id-creation')">Kakao Music</a>
                         </p>
                         <div class="image-display" id="image-display"></div>
                     </div>
@@ -167,7 +167,7 @@
                         <h1>플레이리스트</h1>
                         <p>
                             <a onclick="showText('good-person')">Good Person</a>, 
-                            <a onclick="showText('haechan-solo')">Haechan 1st Solo Album</a>.
+                            <a onclick="showText('haechan-solo')">Haechan 1st Solo Album</a>
                         </p>
                         <div class="text-display" id="text-display"></div>
                     </div>
