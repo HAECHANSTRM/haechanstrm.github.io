@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -17,6 +18,7 @@
             color: white;
             text-decoration: none;
             text-transform: uppercase;
+            cursor: pointer;
         }
         a:hover {
             text-decoration: underline;
@@ -68,34 +70,86 @@
 <body>
     <!-- Top Links -->
     <div class="top-buttons">
-        <a href="streaming-guidelines.html">스트리밍 가이드라인</a>
-        <a href="id-creation.html">아이디 생성</a>
-        <a href="playlist.html">플레이리스트</a>
+        <a onclick="navigateTo('home')">Home</a>
+        <a onclick="navigateTo('streaming-guidelines')">스트리밍 가이드라인</a>
+        <a onclick="navigateTo('id-creation')">아이디 생성</a>
+        <a onclick="navigateTo('playlist')">플레이리스트</a>
     </div>
 
-    <!-- Hero Section -->
-    <section id="home" class="text-white text-center py-5">
-        <div class="container">
-            <div class="ratio ratio-16x9" style="max-width: 640px; margin: 0 auto;">
-                <iframe src="https://www.youtube.com/embed/0yzxJz-hHcc" title="YouTube video" allowfullscreen></iframe>
-            </div>
-            <div class="video-grid">
-                <div class="ratio ratio-16x9">
-                    <iframe src="https://www.youtube.com/embed/MMJ_uIw02U8" title="YouTube video" allowfullscreen></iframe>
+    <!-- Content Section -->
+    <div id="content">
+        <section id="home" class="text-white text-center py-5">
+            <div class="container">
+                <div class="ratio ratio-16x9" style="max-width: 640px; margin: 0 auto;">
+                    <iframe src="https://www.youtube.com/embed/0yzxJz-hHcc" title="YouTube video" allowfullscreen></iframe>
                 </div>
-                <div class="ratio ratio-16x9">
-                    <iframe src="https://www.youtube.com/embed/AmtizylOpeA" title="YouTube video" allowfullscreen></iframe>
+                <div class="video-grid">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/MMJ_uIw02U8" title="YouTube video" allowfullscreen></iframe>
+                    </div>
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/AmtizylOpeA" title="YouTube video" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
         <p class="mb-0">&copy; 2025 HAECHANSTRM. All Rights Reserved.</p>
     </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript -->
+    <script>
+        const pages = {
+            'home': `
+                <section id="home" class="text-white text-center py-5">
+                    <div class="container">
+                        <div class="ratio ratio-16x9" style="max-width: 640px; margin: 0 auto;">
+                            <iframe src="https://www.youtube.com/embed/0yzxJz-hHcc" title="YouTube video" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-grid">
+                            <div class="ratio ratio-16x9">
+                                <iframe src="https://www.youtube.com/embed/MMJ_uIw02U8" title="YouTube video" allowfullscreen></iframe>
+                            </div>
+                            <div class="ratio ratio-16x9">
+                                <iframe src="https://www.youtube.com/embed/AmtizylOpeA" title="YouTube video" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            `,
+            'streaming-guidelines': `
+                <section class="text-white text-center py-5">
+                    <div class="container">
+                        <h1>Streaming Guidelines</h1>
+                        <p>Details about streaming guidelines go here.</p>
+                    </div>
+                </section>
+            `,
+            'id-creation': `
+                <section class="text-white text-center py-5">
+                    <div class="container">
+                        <h1>ID Creation</h1>
+                        <p>Instructions for creating an ID go here.</p>
+                    </div>
+                </section>
+            `,
+            'playlist': `
+                <section class="text-white text-center py-5">
+                    <div class="container">
+                        <h1>Playlist</h1>
+                        <p>Curated playlists will appear here.</p>
+                    </div>
+                </section>
+            `
+        };
+
+        function navigateTo(page) {
+            const contentDiv = document.getElementById('content');
+            contentDiv.innerHTML = pages[page];
+        }
+    </script>
 </body>
 </html>
