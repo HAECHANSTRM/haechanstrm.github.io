@@ -15,6 +15,14 @@
         .btn {
             font-size: 1rem;
         }
+        #home {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+        .ratio {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
         @media (max-width: 768px) {
             h1 {
                 font-size: 1.5rem;
@@ -40,7 +48,7 @@
     <!-- Hero Section -->
     <section id="home" class="bg-dark text-white text-center py-5">
         <div class="container">
-            <div class="ratio ratio-4x3 my-4" style="max-width: 480px; margin: 0 auto;">
+            <div class="ratio ratio-4x3" style="max-width: 480px; margin: 0 auto;">
                 <iframe src="https://www.youtube.com/embed/0yzxJz-hHcc" title="YouTube video" allowfullscreen></iframe>
             </div>
             <div class="d-flex justify-content-center gap-3 mt-4">
