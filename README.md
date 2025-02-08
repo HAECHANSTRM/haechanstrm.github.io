@@ -34,6 +34,13 @@
             gap: 1rem;
             margin-bottom: 1rem;
         }
+        .video-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 1rem;
+        }
         footer {
             font-size: 0.7rem;
             opacity: 0.6;
@@ -44,6 +51,9 @@
             }
             a {
                 font-size: 0.9rem;
+            }
+            .video-grid {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -59,6 +69,14 @@
             </div>
             <div class="ratio ratio-16x9" style="max-width: 640px; margin: 0 auto;">
                 <iframe src="https://www.youtube.com/embed/0yzxJz-hHcc" title="YouTube video" allowfullscreen></iframe>
+            </div>
+            <div class="video-grid">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/MMJ_uIw02U8" title="YouTube video" allowfullscreen></iframe>
+                </div>
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/AmtizylOpeA" title="YouTube video" allowfullscreen></iframe>
+                </div>
             </div>
         </div>
     </section>
