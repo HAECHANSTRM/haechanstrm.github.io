@@ -25,6 +25,11 @@
                     </li>
                 </ul>
             </div>
+            <div class="d-flex gap-2">
+                <a href="#streaming-guideline" class="btn btn-light btn-sm">Streaming Guideline</a>
+                <a href="#id-creation" class="btn btn-light btn-sm">ID Creation</a>
+                <a href="#playlist" class="btn btn-light btn-sm">Playlist</a>
+            </div>
         </div>
     </nav>
 
@@ -32,13 +37,8 @@
     <section id="home" class="bg-primary text-white text-center py-5">
         <div class="container">
             <h1 class="display-4">Welcome to HAECHANSTRM</h1>
-            <div class="ratio ratio-16x9 my-4">
+            <div class="ratio ratio-4x3 my-4" style="max-width: 480px; margin: 0 auto;">
                 <iframe src="https://www.youtube.com/embed/0yzxJz-hHcc" title="YouTube video" allowfullscreen></iframe>
-            </div>
-            <div class="d-flex justify-content-center gap-3">
-                <a href="#streaming-guideline" class="btn btn-light btn-lg">Streaming Guideline</a>
-                <a href="#id-creation" class="btn btn-light btn-lg">ID Creation</a>
-                <a href="#playlist" class="btn btn-light btn-lg">Playlist</a>
             </div>
         </div>
     </section>
