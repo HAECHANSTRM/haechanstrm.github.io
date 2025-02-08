@@ -52,7 +52,11 @@
                 font-size: 1.5rem;
             }
             a {
-                font-size: 1rem;
+                font-size: 0.9rem;
+            }
+            .top-buttons {
+                flex-wrap: wrap;
+                gap: 0.5rem;
             }
             .video-grid {
                 grid-template-columns: 1fr;
@@ -67,7 +71,7 @@
             <div class="top-buttons">
                 <a href="#streaming-guideline">STREAMING GUIDELINES</a>
                 <a href="#id-creation">ID CREATION GUIDE</a>
-                <a href="#playlist">PLAYLISTS</a>
+                <a href="#playlist">PLAYLIST</a>
             </div>
             <div class="ratio ratio-16x9" style="max-width: 640px; margin: 0 auto;">
                 <iframe src="https://www.youtube.com/embed/0yzxJz-hHcc" title="YouTube video" allowfullscreen></iframe>
