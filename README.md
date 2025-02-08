@@ -69,9 +69,9 @@
     <section id="home" class="bg-dark text-white text-center py-5">
         <div class="container">
             <div class="top-buttons">
-                <a href="#streaming-guideline">스트리밍 가이드라인</a>
-                <a href="#id-creation">아이디 생성</a>
-                <a href="#playlist">재생 목록</a>
+                <a href="streaming-guideline.html" target="_blank">스트리밍 가이드라인</a>
+                <a href="id-creation.html" target="_blank">아이디 생성</a>
+                <a href="playlist.html" target="_blank">재생 목록</a>
             </div>
             <div class="ratio ratio-16x9" style="max-width: 640px; margin: 0 auto;">
                 <iframe src="https://www.youtube.com/embed/0yzxJz-hHcc" title="YouTube video" allowfullscreen></iframe>
