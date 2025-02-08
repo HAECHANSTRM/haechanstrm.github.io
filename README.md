@@ -57,7 +57,7 @@
                 <a href="#id-creation">ID Creation</a>
                 <a href="#playlist">Playlist</a>
             </div>
-            <div class="ratio ratio-4x3" style="max-width: 480px; margin: 0 auto;">
+            <div class="ratio ratio-16x9" style="max-width: 640px; margin: 0 auto;">
                 <iframe src="https://www.youtube.com/embed/0yzxJz-hHcc" title="YouTube video" allowfullscreen></iframe>
             </div>
         </div>
