@@ -159,7 +159,6 @@
             'streaming-guidelines': `
                 <section class="text-white text-center py-5">
                     <div class="container">
-                        <h1>스트리밍 가이드라인</h1>
                         <div class="scrollable-container">
                             <a class="clickable-text" onclick="showImage('youtube', 'streaming-guidelines')">YouTube M/V</a>
                             <a class="clickable-text" onclick="showImage('melon', 'streaming-guidelines')">Melon</a>
@@ -175,7 +174,6 @@
             'id-creation': `
                 <section class="text-white text-center py-5">
                     <div class="container">
-                        <h1>아이디 생성</h1>
                         <div class="scrollable-container">
                             <a class="clickable-text" onclick="showImage('melon', 'id-creation')">Melon</a>
                             <a class="clickable-text" onclick="showImage('genie', 'id-creation')">Genie</a>
@@ -190,7 +188,6 @@
             'playlist': `
                 <section class="text-white text-center py-5">
                     <div class="container">
-                        <h1>권장 스밍 리스트</h1>
                         <div class="scrollable-container">
                             <a class="clickable-text" onclick="showText('good-person')">좋은 사람(2022) ver.</a>
                             <a class="clickable-text" onclick="showText('haechan-solo')">HAECHAN 1st Solo Album</a>
