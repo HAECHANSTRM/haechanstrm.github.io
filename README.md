@@ -122,7 +122,7 @@
             'streaming-guidelines': `
                 <section class="text-white text-center py-5">
                     <div class="container">
-                        <h1>Streaming Guidelines</h1>
+                        <h1>스트리밍 가이드라인</h1>
                         <p>Melon, Genie, Bugs, Flo, Kakao Music.</p>
                     </div>
                 </section>
@@ -130,7 +130,7 @@
             'id-creation': `
                 <section class="text-white text-center py-5">
                     <div class="container">
-                        <h1>ID Creation</h1>
+                        <h1>아이디 생성</h1>
                         <p>Melon, Genie, Bugs, Flo, Kakao Music.</p>
                     </div>
                 </section>
@@ -138,7 +138,7 @@
             'playlist': `
                 <section class="text-white text-center py-5">
                     <div class="container">
-                        <h1>Playlist</h1>
+                        <h1>플레이리스트</h1>
                         <p>Good Person, Haechan 1st Solo Album.</p>
                     </div>
                 </section>
