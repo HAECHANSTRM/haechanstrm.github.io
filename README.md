@@ -65,9 +65,9 @@
     <section id="home" class="bg-dark text-white text-center py-5">
         <div class="container">
             <div class="top-buttons">
-                <a href="#streaming-guideline">Streaming Guideline</a>
-                <a href="#id-creation">ID Creation</a>
-                <a href="#playlist">Playlist</a>
+                <a href="#streaming-guideline">STREAMING GUIDELINES</a>
+                <a href="#id-creation">ID CREATION GUIDE</a>
+                <a href="#playlist">PLAYLISTS</a>
             </div>
             <div class="ratio ratio-16x9" style="max-width: 640px; margin: 0 auto;">
                 <iframe src="https://www.youtube.com/embed/0yzxJz-hHcc" title="YouTube video" allowfullscreen></iframe>
