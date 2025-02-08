@@ -3,20 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>아이디 생성</title>
+    <title>ID Creation - HAECHANSTRM</title>
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
             background-color: black;
-            color: white;
             font-family: 'Roboto Slab', serif;
-            padding: 2rem;
+        }
+        a {
+            font-size: 1.2rem;
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        #banner {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+        footer {
+            font-size: 0.7rem;
+            opacity: 0.6;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+            a {
+                font-size: 0.9rem;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>아이디 생성</h1>
-    <p>ID Creation Guideline Photos</p>
+    <!-- Banner Section -->
+    <section id="banner" class="bg-dark text-white text-center py-5">
+        <div class="container">
+            <h1>HAECHANSTRM</h1>
+            <nav class="top-buttons">
+                <a href="index.html" target="_self">메인 페이지</a>
+                <a href="id-creation.html" target="_self">아이디 생성</a>
+                <a href="playlist.html" target="_self">재생 목록</a>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="text-white py-5">
+        <div class="container">
+            <h2>아이디 생성</h2>
+            <p>(PHOTOS) ID CREATION GUIDE: Melon Genie Bugs Vibe Flo</p>
+            <img src="guide.jpg" alt="Streaming Guideline" style="width: 100%; max-width: 600px; margin-bottom: 20px;">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">&copy; 2025 HAECHANSTRM. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
