@@ -18,6 +18,7 @@
             text-decoration: none;
             text-transform: uppercase;
             cursor: pointer;
+            text-selected: underline;
             padding: 5px 10px;
         }
         a:hover {
