@@ -14,7 +14,7 @@
         }
         a {
             font-size: 1.2rem;
-            color: white !important; /* Force white font color */
+            color: white !important;
             text-decoration: none;
             text-transform: uppercase;
             cursor: pointer;
@@ -63,6 +63,18 @@
             .video-grid {
                 grid-template-columns: 1fr;
             }
+        }
+        .image-display {
+            margin-top: 2rem;
+        }
+        .image-display img {
+            max-width: 100%;
+            height: auto;
+        }
+        .text-display {
+            margin-top: 2rem;
+            font-size: 1.2rem;
+            color: white;
         }
     </style>
 </head>
@@ -123,7 +135,14 @@
                 <section class="text-white text-center py-5">
                     <div class="container">
                         <h1>스트리밍 가이드라인</h1>
-                        <p>Melon, Genie, Bugs, Flo, Kakao Music.</p>
+                        <p>
+                            <a onclick="showImage('melon', 'streaming-guidelines')">Melon</a>, 
+                            <a onclick="showImage('genie', 'streaming-guidelines')">Genie</a>, 
+                            <a onclick="showImage('bugs', 'streaming-guidelines')">Bugs</a>, 
+                            <a onclick="showImage('flo', 'streaming-guidelines')">Flo</a>, 
+                            <a onclick="showImage('kakao', 'streaming-guidelines')">Kakao Music</a>.
+                        </p>
+                        <div class="image-display" id="image-display"></div>
                     </div>
                 </section>
             `,
@@ -131,7 +150,14 @@
                 <section class="text-white text-center py-5">
                     <div class="container">
                         <h1>아이디 생성</h1>
-                        <p>Melon, Genie, Bugs, Flo, Kakao Music.</p>
+                        <p>
+                            <a onclick="showImage('melon', 'id-creation')">Melon</a>, 
+                            <a onclick="showImage('genie', 'id-creation')">Genie</a>, 
+                            <a onclick="showImage('bugs', 'id-creation')">Bugs</a>, 
+                            <a onclick="showImage('flo', 'id-creation')">Flo</a>, 
+                            <a onclick="showImage('kakao', 'id-creation')">Kakao Music</a>.
+                        </p>
+                        <div class="image-display" id="image-display"></div>
                     </div>
                 </section>
             `,
@@ -139,7 +165,11 @@
                 <section class="text-white text-center py-5">
                     <div class="container">
                         <h1>플레이리스트</h1>
-                        <p>Good Person, Haechan 1st Solo Album.</p>
+                        <p>
+                            <a onclick="showText('good-person')">Good Person</a>, 
+                            <a onclick="showText('haechan-solo')">Haechan 1st Solo Album</a>.
+                        </p>
+                        <div class="text-display" id="text-display"></div>
                     </div>
                 </section>
             `
@@ -148,6 +178,38 @@
         function navigateTo(page) {
             const contentDiv = document.getElementById('content');
             contentDiv.innerHTML = pages[page];
+        }
+
+        function showImage(platform, section) {
+            const images = {
+                'streaming-guidelines': {
+                    'melon': 'https://via.placeholder.com/300?text=Melon+Streaming',
+                    'genie': 'https://via.placeholder.com/300?text=Genie+Streaming',
+                    'bugs': 'https://via.placeholder.com/300?text=Bugs+Streaming',
+                    'flo': 'https://via.placeholder.com/300?text=Flo+Streaming',
+                    'kakao': 'https://via.placeholder.com/300?text=Kakao+Music+Streaming'
+                },
+                'id-creation': {
+                    'melon': 'https://via.placeholder.com/300?text=Melon+ID+Creation',
+                    'genie': 'https://via.placeholder.com/300?text=Genie+ID+Creation',
+                    'bugs': 'https://via.placeholder.com/300?text=Bugs+ID+Creation',
+                    'flo': 'https://via.placeholder.com/300?text=Flo+ID+Creation',
+                    'kakao': 'https://via.placeholder.com/300?text=Kakao+ID+Creation'
+                }
+            };
+
+            const imageDisplay = document.getElementById('image-display');
+            imageDisplay.innerHTML = `<img src="${images[section][platform]}" alt="${platform} image">`;
+        }
+
+        function showText(option) {
+            const texts = {
+                'good-person': 'Good Person is a heartwarming track that showcases Haechan\'s vocal prowess and emotional depth.',
+                'haechan-solo': 'Haechan\'s 1st Solo Album is a masterpiece filled with versatile tracks, highlighting his talent and artistry.'
+            };
+
+            const textDisplay = document.getElementById('text-display');
+            textDisplay.innerHTML = `<p>${texts[option]}</p>`;
         }
     </script>
 </body>
