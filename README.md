@@ -189,7 +189,6 @@
                 <section class="text-white text-center py-5">
                     <div class="container">
                         <div class="scrollable-container">
-                            <a class="clickable-text" onclick="showText('good-person')">좋은 사람(2022) ver.</a>
                             <a class="clickable-text" onclick="showText('haechan-solo')">HAECHAN 1st Solo Album</a>
                         </div>
                         <div class="text-display" id="text-display"></div>
@@ -237,7 +236,6 @@
 
         function showText(content) {
             const texts = {
-                'good-person': '...',
                 'haechan-solo': 'soon...'
             };
 
