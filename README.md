@@ -6,29 +6,6 @@
     <title>HAECHANSTRM</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background-color: black;
-            color: white;
-        }
-
-        /* Override default background for sections */
-        #home {
-            background-color: black;
-        }
-
-        #about {
-            background-color: black;
-        }
-
-        a {
-            color: #f8f9fa; /* Light color for links */
-        }
-
-        a:hover {
-            color: #d4d4d4; /* Slightly darker on hover */
-        }
-    </style>
 </head>
 <body>
     <!-- Navbar -->
