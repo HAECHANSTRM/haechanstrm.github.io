@@ -31,7 +31,7 @@
         }
         .top-buttons {
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             gap: 1.5rem;
             margin-bottom: 1rem;
             font-weight: bold;
