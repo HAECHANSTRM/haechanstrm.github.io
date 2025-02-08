@@ -4,15 +4,15 @@ import { Button } from "@/components/ui/button";
 
 const HAECHANSTRM = () => {
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col items-center py-10">
+    <div className="min-h-screen bg-black flex flex-col items-center py-10">
       {/* Header */}
       <header className="text-center mb-10">
-        <h1 className="text-4xl font-bold text-gray-800">HAECHANSTRM</h1>
-        <p className="text-lg text-gray-600 mt-2">NCT HAECHAN 스트리밍 음원 총공팀</p>
+        <h1 className="text-4xl font-bold text-white">HAECHANSTRM</h1>
+        <p className="text-lg text-gray-400 mt-2">NCT HAECHAN 스트리밍 음원 총공팀</p>
       </header>
 
       {/* YouTube Video */}
-      <Card className="max-w-4xl w-full mb-10 shadow-lg">
+      <Card className="max-w-2xl w-full mb-10 shadow-lg">
         <CardContent>
           <div className="aspect-w-16 aspect-h-9">
             <iframe
@@ -28,13 +28,13 @@ const HAECHANSTRM = () => {
 
       {/* Buttons */}
       <div className="flex flex-wrap gap-4">
-        <Button className="bg-blue-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-600">
+        <Button className="bg-white text-black px-6 py-3 rounded-lg shadow-md hover:bg-gray-300">
           Streaming Guideline
         </Button>
-        <Button className="bg-green-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-green-600">
+        <Button className="bg-white text-black px-6 py-3 rounded-lg shadow-md hover:bg-gray-300">
           ID Creation
         </Button>
-        <Button className="bg-purple-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-purple-600">
+        <Button className="bg-white text-black px-6 py-3 rounded-lg shadow-md hover:bg-gray-300">
           Playlist
         </Button>
       </div>
