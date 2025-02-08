@@ -16,6 +16,7 @@
             font-size: 1.2rem;
             color: white;
             text-decoration: none;
+            text-transform: uppercase;
         }
         a:hover {
             text-decoration: underline;
@@ -33,6 +34,7 @@
             justify-content: center;
             gap: 1.5rem;
             margin-bottom: 1rem;
+            font-weight: bold;
         }
         .video-grid {
             display: grid;
