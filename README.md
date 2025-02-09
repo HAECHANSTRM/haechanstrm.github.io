@@ -13,10 +13,11 @@
             margin: 0; /* Remove default body margin */
         }
         .banner-image {
-            width: 100%;
-            max-height: 300px;
-            object-fit: cover;
+            width: 100vw; /* Set width to the entire viewport width */
+            height: auto; /* Maintain aspect ratio */
             display: block;
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
         }
         a {
             font-size: 1.2rem;
@@ -241,14 +242,15 @@
                 }
             };
             const imageDisplay = document.getElementById('image-display');
-            imageDisplay.innerHTML = `<img src="${images[section][platform]}" alt="${platform} ${section}">`;
+            const imageUrl = images[section][platform];
+            imageDisplay.innerHTML = `<img src="${imageUrl}" alt="${platform} guidelines">`;
         }
-        function showText(content) {
-            const texts = {
-                'haechan-solo': 'Here is the recommended playlist for HAECHAN\'s 1st Solo Album...'
-            };
+        function showText(section) {
             const textDisplay = document.getElementById('text-display');
-            textDisplay.innerHTML = texts[content];
+            const text = {
+                'haechan-solo': '<ul><li>HAECHAN</li><li>천러</li></ul>'
+            };
+            textDisplay.innerHTML = text[section];
         }
     </script>
 </body>
