@@ -133,7 +133,6 @@
         <a onclick="navigateTo('id-creation')">아이디 생성</a>
         <a onclick="navigateTo('playlist')">권장 스밍 리스트</a>
     </div>
-
     <!-- Content Section -->
     <div id="content">
         <section id="home" class="text-white text-center py-5">
@@ -223,7 +222,6 @@
             const contentDiv = document.getElementById('content');
             contentDiv.innerHTML = pages[page];
         }
-
         function showImage(platform, section) {
             const images = {
                 'streaming-guidelines': {
@@ -242,32 +240,26 @@
                     'kakao': 'https://via.placeholder.com/300?text=Kakao+Music+ID+Creation'
                 }
             };
-
             const imageDisplay = document.getElementById('image-display');
             const imageUrl = images[section][platform];
-
             if (imageUrl) {
                 imageDisplay.innerHTML = `<img src="${imageUrl}" alt="${platform} Image">`;
             }
-
             // Highlight the selected text
             const links = document.querySelectorAll(`#content .clickable-text`);
             links.forEach(link => link.classList.remove('selected')); // Remove previous selection
             event.target.classList.add('selected'); // Add to current selection
         }
-
         function showText(content) {
             const texts = {
                 'haechan-solo': 'soon...'
             };
-
             const textDisplay = document.getElementById('text-display');
             const textContent = texts[content];
 
             if (textContent) {
                 textDisplay.innerHTML = `<p>${textContent}</p>`;
             }
-
             // Highlight the selected text
             const links = document.querySelectorAll(`#content .clickable-text`);
             links.forEach(link => link.classList.remove('selected')); // Remove previous selection
