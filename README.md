@@ -125,7 +125,7 @@
 </head>
 <body>
     <!-- Banner Image -->
-    <img src="https://via.placeholder.com/1920x300?text=HAECHANSTRM" alt="HAECHANSTRM Banner" class="banner-image">
+    <img src="https://pbs.twimg.com/media/GjXYL4PbkAAZeoR?format=jpg&name=4096x4096" alt="HAECHANSTRM Banner" class="banner-image">
 
     <!-- Top Links -->
         <div class="top-buttons">
