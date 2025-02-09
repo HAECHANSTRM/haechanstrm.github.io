@@ -35,10 +35,22 @@
         }
         .top-buttons {
             display: flex;
-            justify-content: flex-start;
             gap: 1.5rem;
             margin-bottom: 1rem;
             font-weight: bold;
+            overflow-x: auto; /* Enable horizontal scrolling */
+            white-space: nowrap; /* Prevent wrapping */
+            padding: 10px 0; /* Optional: Add padding for better touch interaction */
+        }
+        .top-buttons::-webkit-scrollbar {
+            height: 8px; /* Adjust scrollbar height */
+        }
+        .top-buttons::-webkit-scrollbar-thumb {
+            background-color: gray; /* Customize scrollbar thumb color */
+            border-radius: 4px;
+        }
+        .top-buttons::-webkit-scrollbar-track {
+            background-color: black; /* Customize scrollbar track color */
         }
         .video-grid {
             display: grid;
@@ -59,7 +71,7 @@
                 font-size: 0.9rem;
             }
             .top-buttons {
-                flex-wrap: wrap;
+                flex-wrap: nowrap;
                 gap: 0.5rem;
             }
             .video-grid {
