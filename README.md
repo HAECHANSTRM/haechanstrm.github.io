@@ -268,4 +268,3 @@
     </script>
 </body>
 </html>
-![Uploading image.png…]()
