@@ -132,8 +132,6 @@
         <a onclick="navigateTo('streaming-guidelines')">스트리밍 가이드라인</a>
         <a onclick="navigateTo('id-creation')">아이디 생성</a>
         <a onclick="navigateTo('playlist')">권장 스밍 리스트</a>
-    </div>
-
     <!-- Content Section -->
     <div id="content">
         <section id="home" class="text-white text-center py-5">
