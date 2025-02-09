@@ -23,7 +23,6 @@
             text-decoration: none;
             text-transform: uppercase;
             cursor: pointer;
-            text-selected: underline;
             padding: 5px 10px;
         }
         a:hover {
@@ -41,7 +40,7 @@
         .top-buttons {
             display: flex;
             gap: 1.5rem;
-            margin-bottom: 1rem;
+            margin-bottom: 0; /* Removed extra bottom margin */
             font-weight: bold;
             overflow-x: auto; /* Enable horizontal scrolling */
             white-space: nowrap; /* Prevent wrapping */
@@ -127,12 +126,13 @@
     <img src="https://pbs.twimg.com/media/GjXYL4PbkAAZeoR?format=jpg&name=4096x4096" alt="HAECHANSTRM Banner" class="banner-image">
 
     <!-- Top Links -->
-        <div class="top-buttons">
+    <div class="top-buttons">
         <a onclick="navigateTo('home')">HAECHAN</a>
         <a onclick="navigateTo('streaming-guidelines')">스트리밍 가이드라인</a>
         <a onclick="navigateTo('id-creation')">아이디 생성</a>
         <a onclick="navigateTo('playlist')">권장 스밍 리스트</a>
     </div>
+
     <!-- Content Section -->
     <div id="content">
         <section id="home" class="text-white text-center py-5">
@@ -245,10 +245,9 @@
             if (imageUrl) {
                 imageDisplay.innerHTML = `<img src="${imageUrl}" alt="${platform} Image">`;
             }
-            // Highlight the selected text
             const links = document.querySelectorAll(`#content .clickable-text`);
-            links.forEach(link => link.classList.remove('selected')); // Remove previous selection
-            event.target.classList.add('selected'); // Add to current selection
+            links.forEach(link => link.classList.remove('selected'));
+            event.target.classList.add('selected');
         }
         function showText(content) {
             const texts = {
@@ -260,10 +259,9 @@
             if (textContent) {
                 textDisplay.innerHTML = `<p>${textContent}</p>`;
             }
-            // Highlight the selected text
             const links = document.querySelectorAll(`#content .clickable-text`);
-            links.forEach(link => link.classList.remove('selected')); // Remove previous selection
-            event.target.classList.add('selected'); // Add to current selection
+            links.forEach(link => link.classList.remove('selected'));
+            event.target.classList.add('selected');
         }
     </script>
 </body>
