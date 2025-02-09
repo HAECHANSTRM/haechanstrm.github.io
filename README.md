@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -18,11 +19,18 @@
             text-decoration: none;
             text-transform: uppercase;
             cursor: pointer;
-            text-selected: underline;
             padding: 5px 10px;
         }
         a:hover {
             text-decoration: underline;
+        }
+        .top-bar {
+            background: linear-gradient(90deg, #ff7eb3, #ff758c);
+            padding: 1rem 0;
+            color: white;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: bold;
         }
         #home {
             padding-top: 3rem;
@@ -118,6 +126,11 @@
     </style>
 </head>
 <body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        Welcome to HAECHANSTRM
+    </div>
+
     <!-- Top Links -->
     <div class="top-buttons">
         <a onclick="navigateTo('home')">HAECHAN</a>
