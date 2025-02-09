@@ -12,6 +12,12 @@
             background-color: white;
             font-family: 'Roboto Slab', serif;
         }
+        .banner-image {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            display: block;
+        }
         a {
             font-size: 1.2rem;
             color: black !important;
@@ -118,6 +124,9 @@
     </style>
 </head>
 <body>
+    <!-- Banner Image -->
+    <img src="https://via.placeholder.com/1920x300?text=HAECHANSTRM" alt="HAECHANSTRM Banner" class="banner-image">
+
     <!-- Top Links -->
     <div class="top-buttons">
         <a onclick="navigateTo('home')">HAECHAN</a>
@@ -149,122 +158,5 @@
     <footer class="bg-dark text-white text-center py-3">
         <p class="mb-0">&copy; 2025 HAECHANSTRM. All Rights Reserved.</p>
     </footer>
-
-    <!-- JavaScript -->
-    <script>
-        const pages = {
-            'home': `
-                <section id="home" class="text-white text-center py-5">
-                    <div class="container">
-                        <div class="ratio ratio-16x9" style="max-width: 640px; margin: 0 auto;">
-                            <iframe src="https://www.youtube.com/embed/0yzxJz-hHcc" title="YouTube video" allowfullscreen></iframe>
-                        </div>
-                        <div class="video-grid">
-                            <div class="ratio ratio-16x9">
-                                <iframe src="https://www.youtube.com/embed/MMJ_uIw02U8" title="YouTube video" allowfullscreen></iframe>
-                            </div>
-                            <div class="ratio ratio-16x9">
-                                <iframe src="https://www.youtube.com/embed/AmtizylOpeA" title="YouTube video" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            `,
-            'streaming-guidelines': `
-                <section class="text-white text-center py-5">
-                    <div class="container">
-                        <div class="scrollable-container">
-                            <a class="clickable-text" onclick="showImage('youtube', 'streaming-guidelines')">YouTube M/V</a>
-                            <a class="clickable-text" onclick="showImage('melon', 'streaming-guidelines')">Melon</a>
-                            <a class="clickable-text" onclick="showImage('genie', 'streaming-guidelines')">Genie</a>
-                            <a class="clickable-text" onclick="showImage('bugs', 'streaming-guidelines')">Bugs</a>
-                            <a class="clickable-text" onclick="showImage('flo', 'streaming-guidelines')">Flo</a>
-                            <a class="clickable-text" onclick="showImage('kakao', 'streaming-guidelines')">Kakao Music</a>
-                        </div>
-                        <div class="image-display" id="image-display"></div>
-                    </div>
-                </section>
-            `,
-            'id-creation': `
-                <section class="text-white text-center py-5">
-                    <div class="container">
-                        <div class="scrollable-container">
-                            <a class="clickable-text" onclick="showImage('melon', 'id-creation')">Melon</a>
-                            <a class="clickable-text" onclick="showImage('genie', 'id-creation')">Genie</a>
-                            <a class="clickable-text" onclick="showImage('bugs', 'id-creation')">Bugs</a>
-                            <a class="clickable-text" onclick="showImage('flo', 'id-creation')">Flo</a>
-                            <a class="clickable-text" onclick="showImage('kakao', 'id-creation')">Kakao Music</a>
-                        </div>
-                        <div class="image-display" id="image-display"></div>
-                    </div>
-                </section>
-            `,
-            'playlist': `
-                <section class="text-white text-center py-5">
-                    <div class="container">
-                        <div class="scrollable-container">
-                            <a class="clickable-text" onclick="showText('haechan-solo')">HAECHAN 1st Solo Album</a>
-                        </div>
-                        <div class="text-display" id="text-display"></div>
-                    </div>
-                </section>
-            `
-        };
-
-        function navigateTo(page) {
-            const contentDiv = document.getElementById('content');
-            contentDiv.innerHTML = pages[page];
-        }
-
-        function showImage(platform, section) {
-            const images = {
-                'streaming-guidelines': {
-                    'youtube': 'https://pbs.twimg.com/media/GjW1lSaaYAA55nN?format=jpg&name=4096x4096',
-                    'melon': 'https://via.placeholder.com/300?text=Melon+Streaming',
-                    'genie': 'https://via.placeholder.com/300?text=Genie+Streaming',
-                    'bugs': 'https://via.placeholder.com/300?text=Bugs+Streaming',
-                    'flo': 'https://via.placeholder.com/300?text=Flo+Streaming',
-                    'kakao': 'https://via.placeholder.com/300?text=Kakao+Music+Streaming'
-                },
-                'id-creation': {
-                    'melon': 'https://via.placeholder.com/300?text=Melon+ID+Creation',
-                    'genie': 'https://via.placeholder.com/300?text=Genie+ID+Creation',
-                    'bugs': 'https://via.placeholder.com/300?text=Bugs+ID+Creation',
-                    'flo': 'https://via.placeholder.com/300?text=Flo+ID+Creation',
-                    'kakao': 'https://via.placeholder.com/300?text=Kakao+Music+ID+Creation'
-                }
-            };
-
-            const imageDisplay = document.getElementById('image-display');
-            const imageUrl = images[section][platform];
-
-            if (imageUrl) {
-                imageDisplay.innerHTML = `<img src="${imageUrl}" alt="${platform} Image">`;
-            }
-
-            // Highlight the selected text
-            const links = document.querySelectorAll(`#content .clickable-text`);
-            links.forEach(link => link.classList.remove('selected')); // Remove previous selection
-            event.target.classList.add('selected'); // Add to current selection
-        }
-
-        function showText(content) {
-            const texts = {
-                'haechan-solo': 'soon...'
-            };
-
-            const textDisplay = document.getElementById('text-display');
-            const textContent = texts[content];
-
-            if (textContent) {
-                textDisplay.innerHTML = `<p>${textContent}</p>`;
-            }
-
-            // Highlight the selected text
-            const links = document.querySelectorAll(`#content .clickable-text`);
-            links.forEach(link => link.classList.remove('selected')); // Remove previous selection
-            event.target.classList.add('selected'); // Add to current selection
-        }
-    </script>
 </body>
 </html>
