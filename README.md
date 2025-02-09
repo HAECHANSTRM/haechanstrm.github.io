@@ -10,6 +10,7 @@
         body {
             background-color: white;
             font-family: 'Roboto Slab', serif;
+            margin: 0; /* Remove default body margin */
         }
         .banner-image {
             width: 100%;
@@ -28,9 +29,9 @@
         a:hover {
             text-decoration: underline;
         }
-        #home {
-            padding-top: 3rem;
-            padding-bottom: 3rem;
+        #content {
+            padding: 0; /* Ensure no extra padding around the content */
+            margin: 0; /* Remove extra margin */
         }
         .ratio {
             margin-top: 1rem;
@@ -40,11 +41,11 @@
         .top-buttons {
             display: flex;
             gap: 1.5rem;
-            margin-bottom: 0; /* Removed extra bottom margin */
             font-weight: bold;
             overflow-x: auto; /* Enable horizontal scrolling */
             white-space: nowrap; /* Prevent wrapping */
-            padding: 10px 0; /* Optional: Add padding for better touch interaction */
+            padding: 10px 0; /* Add padding for better touch interaction */
+            margin: 0; /* Remove default margin */
         }
         .top-buttons::-webkit-scrollbar {
             height: 8px; /* Adjust scrollbar height */
@@ -83,14 +84,14 @@
             }
         }
         .image-display {
-            margin-top: 2rem;
+            margin-top: 1rem;
         }
         .image-display img {
             max-width: 100%;
             height: auto;
         }
         .text-display {
-            margin-top: 2rem;
+            margin-top: 1rem;
             font-size: 1.2rem;
             color: white;
         }
@@ -241,27 +242,14 @@
                 }
             };
             const imageDisplay = document.getElementById('image-display');
-            const imageUrl = images[section][platform];
-            if (imageUrl) {
-                imageDisplay.innerHTML = `<img src="${imageUrl}" alt="${platform} Image">`;
-            }
-            const links = document.querySelectorAll(`#content .clickable-text`);
-            links.forEach(link => link.classList.remove('selected'));
-            event.target.classList.add('selected');
+            imageDisplay.innerHTML = `<img src="${images[section][platform]}" alt="${platform} ${section}">`;
         }
         function showText(content) {
             const texts = {
-                'haechan-solo': 'soon...'
+                'haechan-solo': 'Here is the recommended playlist for HAECHAN\'s 1st Solo Album...'
             };
             const textDisplay = document.getElementById('text-display');
-            const textContent = texts[content];
-
-            if (textContent) {
-                textDisplay.innerHTML = `<p>${textContent}</p>`;
-            }
-            const links = document.querySelectorAll(`#content .clickable-text`);
-            links.forEach(link => link.classList.remove('selected'));
-            event.target.classList.add('selected');
+            textDisplay.innerHTML = texts[content];
         }
     </script>
 </body>
