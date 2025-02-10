@@ -25,7 +25,7 @@
             text-decoration: underline;
         }
         #home {
-            padding-top: 3rem;
+            padding-top: 1rem; /* Reduced padding at the top */
             padding-bottom: 3rem;
         }
         .ratio {
@@ -36,11 +36,11 @@
         .top-buttons {
             display: flex;
             gap: 1.5rem;
-            margin-bottom: 1rem;
+            margin-bottom: 0; /* Removed extra margin */
             font-weight: bold;
             overflow-x: auto; /* Enable horizontal scrolling */
             white-space: nowrap; /* Prevent wrapping */
-            padding: 10px 0; /* Optional: Add padding for better touch interaction */
+            padding: 0.5rem 0; /* Adjusted padding for tighter spacing */
         }
         .top-buttons::-webkit-scrollbar {
             height: 8px; /* Adjust scrollbar height */
