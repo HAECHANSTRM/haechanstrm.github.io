@@ -2,6 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAECHANSTRM</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Google Fonts -->
@@ -10,14 +11,6 @@
         body {
             background-color: white;
             font-family: 'Roboto Slab', serif;
-            margin: 0; /* Remove default body margin */
-        }
-        .banner-image {
-            width: 100vw; /* Set width to the entire viewport width */
-            height: auto; /* Maintain aspect ratio */
-            display: block;
-            margin: 0; /* Remove default margin */
-            padding: 0; /* Remove default padding */
         }
         a {
             font-size: 1.2rem;
@@ -25,14 +18,15 @@
             text-decoration: none;
             text-transform: uppercase;
             cursor: pointer;
+            text-selected: underline;
             padding: 5px 10px;
         }
         a:hover {
             text-decoration: underline;
         }
-        #content {
-            padding: 0; /* Ensure no extra padding around the content */
-            margin: 0; /* Remove extra margin */
+        #home {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
         }
         .ratio {
             margin-top: 1rem;
@@ -42,11 +36,11 @@
         .top-buttons {
             display: flex;
             gap: 1.5rem;
+            margin-bottom: 1rem;
             font-weight: bold;
             overflow-x: auto; /* Enable horizontal scrolling */
             white-space: nowrap; /* Prevent wrapping */
-            padding: 10px 0; /* Add padding for better touch interaction */
-            margin: 0; /* Remove default margin */
+            padding: 10px 0; /* Optional: Add padding for better touch interaction */
         }
         .top-buttons::-webkit-scrollbar {
             height: 8px; /* Adjust scrollbar height */
@@ -85,14 +79,14 @@
             }
         }
         .image-display {
-            margin-top: 1rem;
+            margin-top: 2rem;
         }
         .image-display img {
             max-width: 100%;
             height: auto;
         }
         .text-display {
-            margin-top: 1rem;
+            margin-top: 2rem;
             font-size: 1.2rem;
             color: white;
         }
@@ -124,9 +118,6 @@
     </style>
 </head>
 <body>
-    <!-- Banner Image -->
-    <img src="https://pbs.twimg.com/media/GjXYL4PbkAAZeoR?format=jpg&name=4096x4096" alt="HAECHANSTRM Banner" class="banner-image">
-
     <!-- Top Links -->
     <div class="top-buttons">
         <a onclick="navigateTo('home')">HAECHAN</a>
@@ -134,6 +125,7 @@
         <a onclick="navigateTo('id-creation')">아이디 생성</a>
         <a onclick="navigateTo('playlist')">권장 스밍 리스트</a>
     </div>
+
     <!-- Content Section -->
     <div id="content">
         <section id="home" class="text-white text-center py-5">
@@ -223,6 +215,7 @@
             const contentDiv = document.getElementById('content');
             contentDiv.innerHTML = pages[page];
         }
+
         function showImage(platform, section) {
             const images = {
                 'streaming-guidelines': {
@@ -241,16 +234,36 @@
                     'kakao': 'https://via.placeholder.com/300?text=Kakao+Music+ID+Creation'
                 }
             };
+
             const imageDisplay = document.getElementById('image-display');
             const imageUrl = images[section][platform];
-            imageDisplay.innerHTML = `<img src="${imageUrl}" alt="${platform} guidelines">`;
+
+            if (imageUrl) {
+                imageDisplay.innerHTML = `<img src="${imageUrl}" alt="${platform} Image">`;
+            }
+
+            // Highlight the selected text
+            const links = document.querySelectorAll(`#content .clickable-text`);
+            links.forEach(link => link.classList.remove('selected')); // Remove previous selection
+            event.target.classList.add('selected'); // Add to current selection
         }
-        function showText(section) {
-            const textDisplay = document.getElementById('text-display');
-            const text = {
-                'haechan-solo': '<ul><li>HAECHAN</li><li>천러</li></ul>'
+
+        function showText(content) {
+            const texts = {
+                'haechan-solo': 'soon...'
             };
-            textDisplay.innerHTML = text[section];
+
+            const textDisplay = document.getElementById('text-display');
+            const textContent = texts[content];
+
+            if (textContent) {
+                textDisplay.innerHTML = `<p>${textContent}</p>`;
+            }
+
+            // Highlight the selected text
+            const links = document.querySelectorAll(`#content .clickable-text`);
+            links.forEach(link => link.classList.remove('selected')); // Remove previous selection
+            event.target.classList.add('selected'); // Add to current selection
         }
     </script>
 </body>
