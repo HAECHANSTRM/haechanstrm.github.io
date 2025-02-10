@@ -11,6 +11,8 @@
         body {
             background-color: white;
             font-family: 'Roboto Slab', serif;
+            margin: 0; /* Remove any body margin */
+            padding: 0; /* Remove any body padding */ 
         }
         a {
             font-size: 1.2rem;
@@ -26,7 +28,7 @@
         }
         #home {
             padding-top: 1rem; /* Reduced padding at the top */
-            padding-bottom: 3rem;
+            padding-bottom: 0; /* Remove bottom padding for the home section */
         }
         .ratio {
             margin-top: 1rem;
