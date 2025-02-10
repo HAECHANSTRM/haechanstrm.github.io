@@ -21,7 +21,7 @@
             text-transform: uppercase;
             cursor: pointer;
             text-selected: underline;
-            padding: 5px 10px;
+            padding: 1rem; /* Reduced padding on the bottom */
         }
         a:hover {
             text-decoration: underline;
